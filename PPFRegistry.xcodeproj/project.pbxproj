@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		917338B425AC2DDA00583057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338B325AC2DDA00583057 /* AppDelegate.swift */; };
 		917338B625AC2DDA00583057 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338B525AC2DDA00583057 /* SceneDelegate.swift */; };
-		917338B825AC2DDA00583057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338B725AC2DDA00583057 /* ViewController.swift */; };
 		917338BB25AC2DDA00583057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917338B925AC2DDA00583057 /* Main.storyboard */; };
 		917338BD25AC2DDB00583057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917338BC25AC2DDB00583057 /* Assets.xcassets */; };
 		917338C025AC2DDB00583057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917338BE25AC2DDB00583057 /* LaunchScreen.storyboard */; };
+		917338C925AC2E6400583057 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338C825AC2E6400583057 /* LoginViewController.swift */; };
+		917338CC25AC2E7600583057 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338CB25AC2E7600583057 /* HomeViewController.swift */; };
+		917338D025AC2E8C00583057 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338CF25AC2E8C00583057 /* ImageSelectViewController.swift */; };
+		917338D325AC2E9E00583057 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338D225AC2E9E00583057 /* PostViewController.swift */; };
+		917338D725AC2EB500583057 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338D625AC2EB500583057 /* SettingViewController.swift */; };
+		917338DD25AC313500583057 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338DC25AC313500583057 /* TabBarController.swift */; };
+		917338E125AC346F00583057 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917338E025AC346F00583057 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		917338B025AC2DDA00583057 /* PPFRegistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPFRegistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917338B325AC2DDA00583057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917338B525AC2DDA00583057 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		917338B725AC2DDA00583057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		917338BA25AC2DDA00583057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		917338BC25AC2DDB00583057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917338BF25AC2DDB00583057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917338C125AC2DDB00583057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917338C825AC2E6400583057 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		917338CB25AC2E7600583057 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		917338CF25AC2E8C00583057 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		917338D225AC2E9E00583057 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		917338D625AC2EB500583057 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		917338DC25AC313500583057 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		917338E025AC346F00583057 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				917338B325AC2DDA00583057 /* AppDelegate.swift */,
+				917338DC25AC313500583057 /* TabBarController.swift */,
 				917338B525AC2DDA00583057 /* SceneDelegate.swift */,
-				917338B725AC2DDA00583057 /* ViewController.swift */,
 				917338B925AC2DDA00583057 /* Main.storyboard */,
+				917338C825AC2E6400583057 /* LoginViewController.swift */,
+				917338CB25AC2E7600583057 /* HomeViewController.swift */,
+				917338CF25AC2E8C00583057 /* ImageSelectViewController.swift */,
+				917338D225AC2E9E00583057 /* PostViewController.swift */,
+				917338D625AC2EB500583057 /* SettingViewController.swift */,
 				917338BC25AC2DDB00583057 /* Assets.xcassets */,
 				917338BE25AC2DDB00583057 /* LaunchScreen.storyboard */,
 				917338C125AC2DDB00583057 /* Info.plist */,
+				917338E025AC346F00583057 /* GoogleService-Info.plist */,
 			);
 			path = PPFRegistry;
 			sourceTree = "<group>";
@@ -125,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917338C025AC2DDB00583057 /* LaunchScreen.storyboard in Resources */,
+				917338E125AC346F00583057 /* GoogleService-Info.plist in Resources */,
 				917338BD25AC2DDB00583057 /* Assets.xcassets in Resources */,
 				917338BB25AC2DDA00583057 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917338B825AC2DDA00583057 /* ViewController.swift in Sources */,
+				917338D025AC2E8C00583057 /* ImageSelectViewController.swift in Sources */,
+				917338DD25AC313500583057 /* TabBarController.swift in Sources */,
+				917338CC25AC2E7600583057 /* HomeViewController.swift in Sources */,
+				917338D325AC2E9E00583057 /* PostViewController.swift in Sources */,
+				917338D725AC2EB500583057 /* SettingViewController.swift in Sources */,
+				917338C925AC2E6400583057 /* LoginViewController.swift in Sources */,
 				917338B425AC2DDA00583057 /* AppDelegate.swift in Sources */,
 				917338B625AC2DDA00583057 /* SceneDelegate.swift in Sources */,
 			);
