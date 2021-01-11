@@ -39,21 +39,84 @@
             </objects>
             <point key="canvasLocation" x="-770" y="817"/>
         </scene>
-        <!--設定-->
+        <!--Login-->
         <scene sceneID="gw5-1R-qpK">
             <objects>
-                <viewController storyboardIdentifier="Setting" id="vly-gh-aXT" customClass="SettingViewController" customModule="PPFRegistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" title="Login" modalPresentationStyle="fullScreen" id="vly-gh-aXT" customClass="LoginViewController" customModule="PPFRegistry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p0x-3e-Nx5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1XU-5C-T94">
+                                <rect key="frame" x="57" y="124" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="sSE-nv-WTA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ten-oV-rhV">
+                                <rect key="frame" x="57" y="168" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TCz-F7-DOJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アカウント作成時は表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyb-YF-BIn">
+                                <rect key="frame" x="57" y="212" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="STY-c0-A2R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLb-Kx-wLQ">
+                                <rect key="frame" x="57" y="256" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dyL-zJ-4r9"/>
+                                </constraints>
+                                <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="handleLoginButton:" destination="vly-gh-aXT" eventType="touchUpInside" id="Y8m-j9-7T6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMD-3V-r9n">
+                                <rect key="frame" x="57" y="296" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="24W-pF-34u"/>
+                                </constraints>
+                                <state key="normal" title="アカウント作成"/>
+                                <connections>
+                                    <action selector="handleCreateAccountButton:" destination="vly-gh-aXT" eventType="touchUpInside" id="hih-Hl-cul"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6tK-Mr-jR7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1XU-5C-T94" firstAttribute="top" secondItem="6tK-Mr-jR7" secondAttribute="top" constant="80" id="3Br-LZ-n9j"/>
+                            <constraint firstItem="ten-oV-rhV" firstAttribute="centerX" secondItem="p0x-3e-Nx5" secondAttribute="centerX" id="3wi-4U-r1h"/>
+                            <constraint firstItem="1XU-5C-T94" firstAttribute="centerX" secondItem="p0x-3e-Nx5" secondAttribute="centerX" id="7ud-3B-NQ0"/>
+                            <constraint firstItem="jyb-YF-BIn" firstAttribute="centerX" secondItem="p0x-3e-Nx5" secondAttribute="centerX" id="BLR-MH-2Jx"/>
+                            <constraint firstItem="tLb-Kx-wLQ" firstAttribute="centerX" secondItem="p0x-3e-Nx5" secondAttribute="centerX" id="JjO-Yk-Lbr"/>
+                            <constraint firstItem="wMD-3V-r9n" firstAttribute="top" secondItem="tLb-Kx-wLQ" secondAttribute="bottom" constant="10" id="byX-0B-UdU"/>
+                            <constraint firstItem="tLb-Kx-wLQ" firstAttribute="top" secondItem="jyb-YF-BIn" secondAttribute="bottom" constant="10" id="gGd-eW-xqv"/>
+                            <constraint firstItem="jyb-YF-BIn" firstAttribute="top" secondItem="ten-oV-rhV" secondAttribute="bottom" constant="10" id="gji-O1-Kvm"/>
+                            <constraint firstItem="wMD-3V-r9n" firstAttribute="centerX" secondItem="p0x-3e-Nx5" secondAttribute="centerX" id="mft-tP-V4H"/>
+                            <constraint firstItem="ten-oV-rhV" firstAttribute="top" secondItem="1XU-5C-T94" secondAttribute="bottom" constant="10" id="nDn-hd-USA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" id="5kh-Gl-Wle"/>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="jyb-YF-BIn" id="Idb-mb-SrF"/>
+                        <outlet property="mailAddressTextField" destination="1XU-5C-T94" id="guo-A7-bg8"/>
+                        <outlet property="passwordTextField" destination="ten-oV-rhV" id="mPK-gH-pWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WT3-BL-yge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="817"/>
+            <point key="canvasLocation" x="1722" y="817"/>
         </scene>
         <!--投稿-->
         <scene sceneID="hpt-fz-DAr">
@@ -71,20 +134,21 @@
             </objects>
             <point key="canvasLocation" x="19" y="817"/>
         </scene>
-        <!--Login View Controller-->
+        <!--設定-->
         <scene sceneID="all-1f-mHx">
             <objects>
-                <viewController storyboardIdentifier="Login" id="Ms1-Sv-Z4L" customClass="LoginViewController" customModule="PPFRegistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="設定" storyboardIdentifier="Setting" id="Ms1-Sv-Z4L" customClass="SettingViewController" customModule="PPFRegistry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5at-lI-Qol">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="egb-3u-F8i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="設定" id="dZR-gA-owi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Di7-mA-MEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721.7391304347827" y="93.75"/>
+            <point key="canvasLocation" x="897" y="817"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rxM-fT-qNC">
@@ -92,13 +156,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xtc-kO-mx9" customClass="TabBarController" customModule="PPFRegistry" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FfI-uh-sCM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="7ux-Ps-abZ" kind="relationship" relationship="viewControllers" id="KWJ-Qz-tzV"/>
                         <segue destination="phz-B1-E7w" kind="relationship" relationship="viewControllers" id="t2d-it-lfk"/>
-                        <segue destination="vly-gh-aXT" kind="relationship" relationship="viewControllers" id="afa-h4-1dV"/>
+                        <segue destination="Ms1-Sv-Z4L" kind="relationship" relationship="viewControllers" id="mpN-gx-Fdu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqj-4K-24G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
