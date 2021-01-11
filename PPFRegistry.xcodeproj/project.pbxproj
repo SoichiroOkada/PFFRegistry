@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		917338D725AC2EB500583057 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338D625AC2EB500583057 /* SettingViewController.swift */; };
 		917338DD25AC313500583057 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338DC25AC313500583057 /* TabBarController.swift */; };
 		917338E125AC346F00583057 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917338E025AC346F00583057 /* GoogleService-Info.plist */; };
+		917338FD25AC75BF00583057 /* RegistryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917338FC25AC75BF00583057 /* RegistryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		917338D625AC2EB500583057 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		917338DC25AC313500583057 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		917338E025AC346F00583057 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		917338FC25AC75BF00583057 /* RegistryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistryTableViewController.swift; path = "/Users/okadasouichirou/Desktop/untitled folder/PPFRegistry/PPFRegistry/RegistryTableViewController.swift"; sourceTree = "<absolute>"; };
 		A7ACD908CBACC5E196F80576 /* Pods-PPFRegistry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPFRegistry.debug.xcconfig"; path = "Target Support Files/Pods-PPFRegistry/Pods-PPFRegistry.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8FD02BB08E069B5AC471E9 /* Pods-PPFRegistry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PPFRegistry.release.xcconfig"; path = "Target Support Files/Pods-PPFRegistry/Pods-PPFRegistry.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				917338CF25AC2E8C00583057 /* ImageSelectViewController.swift */,
 				917338D225AC2E9E00583057 /* PostViewController.swift */,
 				917338D625AC2EB500583057 /* SettingViewController.swift */,
+				917338FC25AC75BF00583057 /* RegistryTableViewController.swift */,
 				917338BC25AC2DDB00583057 /* Assets.xcassets */,
 				917338BE25AC2DDB00583057 /* LaunchScreen.storyboard */,
 				917338C125AC2DDB00583057 /* Info.plist */,
@@ -106,7 +109,6 @@
 				A7ACD908CBACC5E196F80576 /* Pods-PPFRegistry.debug.xcconfig */,
 				AF8FD02BB08E069B5AC471E9 /* Pods-PPFRegistry.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -233,6 +235,7 @@
 				917338C925AC2E6400583057 /* LoginViewController.swift in Sources */,
 				917338B425AC2DDA00583057 /* AppDelegate.swift in Sources */,
 				917338B625AC2DDA00583057 /* SceneDelegate.swift in Sources */,
+				917338FD25AC75BF00583057 /* RegistryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

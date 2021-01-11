@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/okadasouichirou/Desktop/untitled folder/PPFRegistry/PPFRegistry/RegistryTableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:PPFRegistry.xcodeproj">
    </FileRef>
    <FileRef

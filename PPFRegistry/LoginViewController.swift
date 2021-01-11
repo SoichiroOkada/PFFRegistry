@@ -12,7 +12,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var mailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var displayNameTextField: UITextField!
+    @IBOutlet weak var displayLastNameTextField: UITextField!
+    @IBOutlet weak var displayFirstNameTextField: UITextField!
+    @IBOutlet weak var hospitalNameTextField: UITextField!
     
     //ログインボタンをタップした時に呼ばれるメソッド
     @IBAction func handleLoginButton(_ sender: Any) {
@@ -37,10 +39,11 @@ class LoginViewController: UIViewController {
     }
     //アカウント作成ボタンをタップした時に呼ばれるメソッド
     @IBAction func handleCreateAccountButton(_ sender: Any) {
-        if let address = mailAddressTextField.text, let password = passwordTextField.text, let displayName = displayNameTextField.text {
+        if let address = mailAddressTextField.text, let password = passwordTextField.text,
+           let displayLastName = displayLastNameTextField.text, let displayFirstName = displayFirstNameTextField.text{
             
             // アドレスとパスワードと表示名のいずれかでも入力されていない時は何もしない
-            if address.isEmpty || password.isEmpty || displayName.isEmpty {
+            if address.isEmpty || password.isEmpty || displayLastName.isEmpty || displayFirstName.isEmpty {
                 print("DEBUG_PRINT: 何かが空文字です。")
                 return
             }
@@ -57,7 +60,7 @@ class LoginViewController: UIViewController {
                 let user = Auth.auth().currentUser
                 if let user = user {
                     let changeRequest = user.createProfileChangeRequest()
-                    changeRequest.displayName = displayName
+                    changeRequest.displayName = displayFirstName + displayLastName
                     changeRequest.commitChanges { error in
                         if let error = error {
                             // プロフィールの更新でエラーが発生
